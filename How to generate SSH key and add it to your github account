@@ -1,0 +1,22 @@
+For Mac Users:
+
+Step 1: Generating the SSH key on your Mac
+         i) Go to your terminal and type: ssh-keygen
+         ii) you will be asked to enter the password (enter the same password you are using to access your mac, so you do not
+             forget it in future. NOTE: while typing password, it is hidden, you wont see asterisk or anything)
+         iii) you will be asked where you want to save the ssh key, just press enter, by default it will save on
+              /Users/(your pc name)/.ssh/id_rsa.pub.
+         iv) you will see the private key being generated, which is not the SSH key.
+         
+ Step 2: Copying the SSH key and pasting into your Git hub account
+         i) In your terminal type: pbcopy < ~/.ssh/id_rsa.pub
+         ii) Once you have typed above command press enter.
+         
+ Step 3: Login to your Github account
+         1) go to your seetings
+         ii) Click on SSH and GPG keys
+         iii) click on add new SSH key and type title: anything you want and in the key section press command + v key
+               NOTE: when you typed: pbcopy < ~/.ssh/id_rsa.pub in your terminal, it will copy the SSH key and when you will
+                     do command + v it will paste.
+ 
+             
